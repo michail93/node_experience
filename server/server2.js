@@ -12,7 +12,7 @@ var server = new http.Server(function(req, res){
     res.end(urlParsed["query"].message + "\n");
   }else{
     res.statusCode=404;
-    res.end("Page not found");
+    res.end("Page not found\n");
   }
 });
 
